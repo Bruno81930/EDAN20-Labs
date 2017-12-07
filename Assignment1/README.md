@@ -13,7 +13,7 @@ Read a short text on an industrial system
 ### Write a Python program.
 Check the results and comment them briefly
 Preparation
-Download the Selma folder and uncompress it. It contains novels by Selma Lagerlöf.
+Download the [Selma](https://github.com/pnugues/ilppp/raw/master/programs/corpus/Selma.zip) folder and uncompress it. It contains novels by [Selma Lagerlöf](https://sv.wikipedia.org/wiki/Selma_Lagerl%C3%B6f).
 Read the description of the tf-idf measure on Wikipedia (https://en.wikipedia.org/wiki/Tf-idf).
 Programming the Indexer
 Your program will take a corpus as input (here the Selma novels) and produce an index of all the words with their positions. you should be able to run it this way:
@@ -129,4 +129,4 @@ Using the cosine similarity, compare all the pairs of documents with their tfidf
 What are the two novels that are the most similar?
 
 ### Complement
-Read the text Challenges in Building Large-Scale Information Retrieval Systems about the history of Google indexing by Jeff Dean. In your report, tell how your index encoding is related to what Google did.
+Read the text Challenges in Building Large-Scale Information Retrieval Systems about the history of [Google indexing](https://research.google.com/people/jeff/WSDM09-keynote.pdf) by [Jeff Dean](https://research.google.com/pubs/jeff.html). In your report, tell how your index encoding is related to what Google did.

@@ -11,3 +11,5 @@
 [Assignment #4: Extraction of subject-verb-object triples](https://github.com/Bruno81930/EDAN20-Labs/tree/master/Assignment4)
 
 [Assignment #5: Dependency parsing](https://github.com/Bruno81930/EDAN20-Labs/tree/master/Assignment5)
+
+[Assignment #6: Dependency parsing using machine learning techniques](https://github.com/Bruno81930/EDAN20-Labs/tree/master/Assignment6)

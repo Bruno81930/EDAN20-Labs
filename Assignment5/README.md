@@ -19,7 +19,7 @@ In this session, you will implement a dependency parser for Swedish. Should you 
 ### Choosing a training and a test sets
 The CONLL-X annotated corpora and annotation scheme are available here. The Swedish corpus called Talbanken was originally collected and annotated in Lund and modified by Joakim Nivre. You can read details on the corpus and references here.
 
-In this assignment, you will use the CONLL-X Swedish corpus. Download the tar archives containing the training and test sets for Swedish and uncompress them: [data sets]. Local copies: [ training set] [ test set] [ test set with answers].
+In this assignment, you will use the CONLL-X Swedish corpus. Download the tar archives containing the training and test sets for Swedish and uncompress them: [data sets](http://ilk.uvt.nl/conll/free_data.html). Local copies: [training set](http://fileadmin.cs.lth.se/cs/Education/EDAN20/corpus/conllx/sv/swedish_talbanken05_train.conll) [test set](http://fileadmin.cs.lth.se/cs/Education/EDAN20/corpus/conllx/sv/swedish_talbanken05_test_blind.conll) [test set with answers](http://fileadmin.cs.lth.se/cs/Education/EDAN20/corpus/conllx/sv/swedish_talbanken05_test.conll).
 ### Nivre's parser
 For each sentence with a projective dependency graph, there is an action sequence that enables Nivre's parser to generate this graph. Gold standard parsing corresponds to the sequence of parsing actions, left-arc (la), right-arc (ra), shift (sh), and reduce (re) that produces the manually-obtained, gold standard, graph.
 
@@ -27,7 +27,7 @@ Using an annotated corpus, we can derive all the action sequences producing the 
 
 Once the data collected, the training procedure will produce a 4-class classifier that you will embed in Nivre's parser to choose the next action. During parsing, Nivre's parser will call the classifier to choose the next action in the set {la, ra, sh, re} using the current context.
 
-#### Run the dparser.py program. You will have to edit the data paths so that they fit your configurations.
+#### Run the dparser.py [program](https://github.com/pnugues/ilppp/tree/master/programs/ch13/python). You will have to edit the data paths so that they fit your configurations.
 
 #### Understand from the slides and the program how Nivre's parser is extended to carry out a gold standard parsing. Given a manually-annotated dependency graph, what are the conditions on the stack and the current input list -- the queue -- to execute left-arc, right-arc, shift, or reduce? Start with left-arc and right-arc, which are the simplest ones.
 
@@ -84,4 +84,4 @@ x = ['NN', 'ROOT', 'Äktenskapet', 'ROOT', 'AV', 'EN', 'är', 'en', False, True]
 x = ['ROOT', 'nil', 'ROOT', 'nil', 'AV', 'EN', 'är', 'en', True, False], y = ra.ROOTx = ['AV', 'ROOT', 'är', 'ROOT', 'EN', 'AJ', 'en', 'gammal', True, False], y = sh
 ```
 ### Complement (Optional)
-Read the text An Efficient Algorithm for Projective Dependency Parsing by Joakim Nivre (2003) [pdf]. You can find additional references here.
+Read the text An Efficient Algorithm for Projective Dependency Parsing by Joakim Nivre (2003) [pdf](http://stp.lingfil.uu.se/~nivre/docs/iwpt03.pdf). You can find additional references [here](http://stp.lingfil.uu.se/~nivre/docs/cv_eng.html).

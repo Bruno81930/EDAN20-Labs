@@ -9,15 +9,15 @@ Write a short report of 1 to 2 pages on the assignment
 
 ## Tasks
 ### Choosing a training and a test sets
-As annotated data and annotation scheme, you will use the data available from CoNLL 2000.
+As annotated data and annotation scheme, you will use the data available from [CoNLL 2000](https://www.clips.uantwerpen.be/conll2000/chunking/).
 Download both the training and test sets (the same as in the previous assignment) and decompress them.
-(Local copies available here: [train.txt] [test.txt].)
-Be sure that you have the scikit-learn package: Start it by typing import sklearn in Python.
+(Local copies available here: [train.txt](http://fileadmin.cs.lth.se/cs/Education/EDAN20/corpus/conll2000/train.txt) [test.txt](http://fileadmin.cs.lth.se/cs/Education/EDAN20/corpus/conll2000/test.txt).)
+Be sure that you have the [scikit-learn](http://scikit-learn.org/) package: Start it by typing import sklearn in Python.
 ### Baseline
 Most statistical algorithms for language processing start with a so-called baseline. The baseline figure corresponds to the application of a minimal technique that is used to assess the difficulty of a task and for comparison with further programs.
 
-#### Read the baseline proposed by the organizers of the CoNLL 2000 shared task (In the Results Sect.). What do you think of it?
-#### Implement this baseline program. You may either create a completely new program or start from an existing program that you will modify [ Program folder ].
+#### Read the baseline proposed by the organizers of the [CoNLL 2000 shared task](https://www.clips.uantwerpen.be/conll2000/chunking/) (In the Results Sect.). What do you think of it?
+#### Implement this baseline program. You may either create a completely new program or start from an existing program that you will modify [Program folder](https://github.com/pnugues/ilppp/tree/master/programs/labs/chunking/chunker_python/).
 ##### Complete the train function so that it computes the chunk distribution for each part of speech. You will use the train file to derive your distribution and you will store the results in a dictionary. Below, you have an excerpt of the expected results:
 ```python
   {'JJR':
@@ -52,7 +52,7 @@ it PRP B-NP B-NP
 
 The CoNLL 2000 evaluation script will use these two last columns, chunk and predicted chunk, to compute the performance.
 
-#### Measure the performance of the system. Use the conlleval.txt evaluation program used by the CoNLL 2000 shared task.
+#### Measure the performance of the system. Use the [conlleval.txt](https://www.clips.uantwerpen.be/conll2000/chunking/) evaluation program used by the CoNLL 2000 shared task.
 ##### conlleval.txt is the official CoNLL Perl script. It expects the two last columns of the test set to be the manually assigned chunk (gold standard) and the predicted chunk.
 ##### Start it like this:
 ```
@@ -76,7 +76,7 @@ The program that won the CoNLL 2000 shared task (Kudoh and Matsumoto, 2000) used
 The values of the five words in this window: w i-2 , w i-1 , w i , w i+1 , w i+2
 The values of the five parts of speech in this window: t i-2 , t i-1 , t i , t i+1 , t i+2
 The values of the two previous chunk tags in the first part of the window: c i-2 , c i-1
-The two last parameters are said to be dynamic because the program computes them at run-time. Kudoh and Matsumoto trained a classifier based on support vector machines. Read Kudoh and Matsumoto's paper and the Yamcha software site.
+The two last parameters are said to be dynamic because the program computes them at run-time. Kudoh and Matsumoto trained a classifier based on support vector machines. Read [Kudoh and Matsumoto's paper](http://www.clips.uantwerpen.be/conll2000/pdf/14244kud.pdf) and the [Yamcha](http://www.chasen.org/~taku/software/yamcha/) software site.
 
 What is the feature vector that corresponds to the program? Is it the same Kudoh and Matsumoto used in their experiment?
 What is the performance of the chunker?

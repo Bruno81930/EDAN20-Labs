@@ -13,8 +13,8 @@ Optionally read a short article on the importance of corpora
 ### Collecting a corpus
 Collect a corpus of at least 750,000 words. You will check the number of words using the Unix command wc -w.
 Alternatively, you can retrieve a corpus of novels by Selma Lagerlöf from this URL: http://fileadmin.cs.lth.se/cs/Education/EDAN20/corpus/Selma.txt .
-Run the concordance program to print the lines containing a specific word, for instance Nils.
-Run the tokenization program on your corpus and count the words using the Unix sort and uniq commands.
+Run the [concordance program](https://github.com/pnugues/ilppp/tree/master/programs/ch02/python) to print the lines containing a specific word, for instance Nils.
+Run the [tokenization program](https://github.com/pnugues/ilppp/tree/master/programs/ch05/python) on your corpus and count the words using the Unix sort and uniq commands.
 
 ### Normalizing a corpus
 Write a program to insert `<s> and </s>` tags to delimit sentences. You can start from the tokenization and modify it. Use a simple heuristics such as: a sentence starts with a capital letter and ends with a period. Estimate roughly the accuracy of your program.
@@ -31,12 +31,12 @@ The five last lines of the text should look like this:
 ```
 
 ### Counting unigrams and bigrams
-Read and try programs to compute the frequency of unigrams and bigrams of the training set: [Program folder].
+Read and try programs to compute the frequency of unigrams and bigrams of the training set: [Program folder](https://github.com/pnugues/ilppp/tree/master/programs/ch05/python).
 What is the possible number of bigrams and their real number? Explain why such a difference. What would be the possible number of 4-grams.
 Propose a solution to cope with bigrams unseen in the corpus. This topic will be discussed during the lab session.
 
 ### Computing the likelihood of a sentence
-Write a program to compute a sentence's probability using unigrams. You may find useful the dictionaries that we saw in the mutual information program: [Program folder].
+Write a program to compute a sentence's probability using unigrams. You may find useful the dictionaries that we saw in the mutual information program: [Program folder](https://github.com/pnugues/ilppp/tree/master/programs/ch05/python).
 Write a program to compute the sentence probability using bigrams.
 Select five sentences in your test set and run your programs on them.
 Tabulate your results as in the examples below with the sentence Det var en gång en katt som hette Nils:
@@ -86,7 +86,7 @@ Perplexity: 73.10957919390972
 ```
 
 ### Reading
-As an application of n-grams, execute the Jupyter notebook by Peter Norvig here (just run all the cells). You will find the data here.
+As an application of n-grams, execute the Jupyter notebook by Peter Norvig [here](http://nbviewer.jupyter.org/url/norvig.com/ipython/How%20to%20Do%20Things%20with%20Words.ipynb) (just run all the cells). You will find the data here.
 
 ### Complement
-As a complement, you can read a paper by Church and Hanks, Word Association Norms, Mutual Information, and Lexicography, Computational Linguistics, 16(1):22-29, 1990, as well as another one on backoff by Brants et al. (2007) Large language models in machine translation.
+As a complement, you can read a paper by Church and Hanks, [Word Association Norms, Mutual Information, and Lexicography](http://www.aclweb.org/anthology/J/J90/J90-1003.pdf), Computational Linguistics, 16(1):22-29, 1990, as well as another one on backoff by Brants et al. (2007) [Large language models in machine translation](http://www.aclweb.org/anthology/D07-1090.pdf).

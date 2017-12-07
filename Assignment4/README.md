@@ -8,20 +8,20 @@ Understand how dependency parsing can help create a knowledge base
 Write a short report of 1 to 2 pages on the assignment
 
 ## Tasks
-This assignment is inspired by the Prismatic knowledge base used in the IBM Watson system. See this paper for details.
+This assignment is inspired by the Prismatic knowledge base used in the IBM Watson system. See this [paper](http://www.aclweb.org/anthology/W/W10/W10-0915.pdf) for details.
 
 In this session, you will first use a parsed corpus of Swedish to extract the pairs and triples, and then apply it to other languages.
 
 ### Choosing a parsed corpus
 
-#### In this part, you will use the CONLL-X Swedish corpus. Download the tar archives containing the training and test sets for Swedish and uncompress them: [data sets]. Local copies: [ training set] [ test set] [ test set with answers]. You will use the training set only.
+#### In this part, you will use the CONLL-X Swedish corpus. Download the tar archives containing the training and test sets for Swedish and uncompress them: [data sets](http://ilk.uvt.nl/conll/free_data.html). Local copies: [training set](http://fileadmin.cs.lth.se/cs/Education/EDAN20/corpus/conllx/sv/swedish_talbanken05_train.conll) [test set](http://fileadmin.cs.lth.se/cs/Education/EDAN20/corpus/conllx/sv/swedish_talbanken05_test_blind.conll) [test set with answers](http://fileadmin.cs.lth.se/cs/Education/EDAN20/corpus/conllx/sv/swedish_talbanken05_test.conll). You will use the training set only.
 
 #### Draw a graphical representation of the two first sentences of the training set.
-#### Download What's wrong with my NLP and use it to check your representations.
+#### Download [What's wrong with my NLP](http://code.google.com/p/whatswrong/) and use it to check your representations.
 #### Apply the dependency parser for Swedish of the Langforia pipelines to these sentences. Link to Lanforia pipelines: http://vilde.cs.lth.se:9000/
 
 ### Extracting the subject–verb pairs and subject–verb–object triples
-You will extract all the subject–verb pairs and the subject–verb–object triples from the training corpus. To start the program, you can use the CoNLL-X reader available here. This program will enable you to read the other corpora. You can also reprogram one using the model of CoNLL 2000. You will find the description of the CoNLL-X format [here]. Archive here.
+You will extract all the subject–verb pairs and the subject–verb–object triples from the training corpus. To start the program, you can use the CoNLL-X reader available [here](https://raw.githubusercontent.com/pnugues/ilppp/master/programs/labs/relation_extraction/python/conll.py). This program will enable you to read the other corpora. You can also reprogram one using the model of CoNLL 2000. You will find the description of the CoNLL-X format [here](http://ilk.uvt.nl/conll/#dataformat). Archive [here](https://web.archive.org/web/20161105025307/http://ilk.uvt.nl/conll/).
 
 You can design the program you want. However, here are some hints on the results:
 
@@ -47,7 +47,7 @@ You can design the program you want. However, here are some hints on the results
 
 ### Multilingual Corpora
 
-Once your program is working on Swedish, you will apply it to all the other languages from this repository: Universal Dependencies. The address to download the corpora is here. You have a local version in the /usr/local/cs/EDAN20/ folder. You can read the training files from the folder using the CoNLL reader provided for the first part. You will need to adapt your program to CoNLL-U. See here.
+Once your program is working on Swedish, you will apply it to all the other languages from this repository: [Universal Dependencies](http://universaldependencies.org/). The address to download the corpora is [here](http://hdl.handle.net/11234/1-1983). You have a local version in the /usr/local/cs/EDAN20/ folder. You can read the training files from the folder using the CoNLL reader provided for the first part. You will need to adapt your program to CoNLL-U. See [here](http://universaldependencies.org/format.html).
 
 Here are suggestions to carry out this task:
 
