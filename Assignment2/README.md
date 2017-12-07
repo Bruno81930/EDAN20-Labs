@@ -17,9 +17,9 @@ Run the concordance program to print the lines containing a specific word, for i
 Run the tokenization program on your corpus and count the words using the Unix sort and uniq commands.
 
 ### Normalizing a corpus
-Write a program to insert <s> and </s> tags to delimit sentences. You can start from the tokenization and modify it. Use a simple heuristics such as: a sentence starts with a capital letter and ends with a period. Estimate roughly the accuracy of your program.
+Write a program to insert `<s> and </s>` tags to delimit sentences. You can start from the tokenization and modify it. Use a simple heuristics such as: a sentence starts with a capital letter and ends with a period. Estimate roughly the accuracy of your program.
 Modify your program to remove the punctuation signs and set all the text in lower case letters.
-The result should be a normalized text without punctuation signs where all the sentences are delimited with <s> and </s> tags.
+The result should be a normalized text without punctuation signs where all the sentences are delimited with `<s> and </s>` tags.
 The five last lines of the text should look like this:
 
 ```
